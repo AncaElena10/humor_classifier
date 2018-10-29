@@ -19,7 +19,7 @@ def main():
     targets = data['class'].values
     classifier.fit(counts, targets)
 
-    examples = ['Romania is my country.']
+    examples = ['Romania is not my country.']
     example_counts = vectorizer.transform(examples)
     predictions = classifier.predict(example_counts)
 
